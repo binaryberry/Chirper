@@ -1,5 +1,7 @@
+require './spec/spec_helper'
+
 Given(/^I am on the homepage$/) do
-	expect(current_path).to be ('/')
+	visit('/')
 	page.should have_content('Chirper, because life is better when your voice is heard.')
 	page.should have_content('Sign up')
 	page.has_field?("User Name") 
