@@ -1,5 +1,7 @@
 require 'sinatra/base'
 
+set :views, File.dirname(__FILE__) + '/app'
+
 class Chirper < Sinatra::Base
   get '/' do
     erb :index
