@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class Chirper < Sinatra::Base
   get '/' do
-    'Hello Chirper!'
+    erb :index
   end
 
   # start the server if ruby file executed directly
